@@ -44,7 +44,7 @@ instance Num Bfn where
     abs f = f
 
 instance Show Bfn where
-  show f = "Bfn:\n" ++ bfn_print f
+    show f = "Bfn:\n" ++ bfn_print f
 
 -- Example
 exampleF :: Bfn
