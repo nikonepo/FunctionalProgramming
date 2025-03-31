@@ -7,7 +7,7 @@ h :: Int -> Int
 h x = x + 1
 
 f :: Int -> Int -> Int
-f curry ( h . uncurry g)
+f = curry ( h . uncurry g)
 
 --
 assert :: Bool -> a -> a
