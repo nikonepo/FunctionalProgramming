@@ -1,0 +1,11 @@
+on:
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  runhaskell:
+    name: Hello World
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: haskell-actions/setup@v2
+      - run: runhaskell hw_3/1.hs
