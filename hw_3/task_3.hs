@@ -17,18 +17,18 @@ assert _     x = x
 
 main :: IO ()
 main = do
-    let _ = assert (xor True False == True) (k+273.15)
-    let _ = assert (xor False True == True) (k+273.15)
-    let _ = assert (xor True True == False) (k+273.15)
-    let _ = assert (xor False False == False) (k+273.15)
+    let _ = assert (xor True False == True) ()
+    let _ = assert (xor False True == True) ()
+    let _ = assert (xor True True == False) ()
+    let _ = assert (xor False False == False) ()
 
-    let _ = assert (maj3 True True True == True) (k+273.15)
-    let _ = assert (maj3 True True False == True) (k+273.15)
-    let _ = assert (maj3 True False True == True) (k+273.15)
-    let _ = assert (maj3 False True True == True) (k+273.15)
-    let _ = assert (maj3 True False False == False) (k+273.15)
-    let _ = assert (maj3 False True False == False) (k+273.15)
-    let _ = assert (maj3 False False True == False) (k+273.15)
-    let _ = assert (maj3 False False False == False) (k+273.15)
+    let _ = assert (maj3 True True True == True) ()
+    let _ = assert (maj3 True True False == True) ()
+    let _ = assert (maj3 True False True == True) ()
+    let _ = assert (maj3 False True True == True) ()
+    let _ = assert (maj3 True False False == False) ()
+    let _ = assert (maj3 False True False == False) ()
+    let _ = assert (maj3 False False True == False) ()
+    let _ = assert (maj3 False False False == False) ()
 
     putStrLn "All tests passed."
