@@ -1,5 +1,5 @@
 divisors :: Integer -> [Integer]
-divisors n = [i | i <- [1 .. i - 1], n `mod` i == 0]
+divisors n = [i | i <- [1 .. n - 1], n `mod` i == 0]
 
 is_friendly :: Integer -> Integer -> Bool
 is_friendly n m = sum (divisors n) == m && sum (divisors m) == n
