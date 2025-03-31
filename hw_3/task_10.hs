@@ -40,7 +40,7 @@ instance Num Bfn where
     fromInteger 0 = bfn_zero
     fromInteger 1 = bfn_one
     negate = bfn_not
-    sugnum f = if f == bfn_zero then bfn_zero else bfn_one
+    signum f = if f == bfn_zero then bfn_zero else bfn_one
     abs f = f
 
 instance Show Bfn where
