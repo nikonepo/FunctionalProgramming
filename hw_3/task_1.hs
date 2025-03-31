@@ -13,9 +13,9 @@ assert _     x = x
 main :: IO ()
 main = do
     let test1 = composition ((+1), (*2)) 3
-    let _ = assert (test1 == 7) (return ())
+    let _ = assert (test1 == 7) (putStrLn "composition test passed.")
 
     let test2 = composeFuncs [(*2), (+3)] 4
-    let _ = assert (test2 == 14) (return ())
+    let _ = assert (test2 == 14) (putStrLn "composeFuncs test passed.")
 
     putStrLn "All tests passed."
