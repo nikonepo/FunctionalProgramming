@@ -8,7 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: haskell-actions/setup@v2
-      - name: Compile task_1.hs and run it
-        run: |
-          ghc -fassertions hw_3/task_1.hs -o task1
-          ./task1
+      - run: runhaskell hw_3/task_1.hs
