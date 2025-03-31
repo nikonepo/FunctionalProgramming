@@ -3,7 +3,7 @@ my_curry :: ((a, b) -> c) -> a -> b -> c
 my_curry f a b = f (a, b)
 
 my_uncurry :: (a -> b -> c) -> (a, b) -> c
-my_uncurry = f (a, b) = f a b
+my_uncurry f (a, b) = f a b
 
 -- Тестовые функции
 add :: (Int, Int) -> Int
