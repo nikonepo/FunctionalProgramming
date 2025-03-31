@@ -17,5 +17,6 @@ main = do
 
     let test2 = composeFuncs [(*2), (+3)] 4
     let _ = assert (test2 == 14) (putStrLn "composeFuncs test passed.")
+    let _ = assert (test2 == 15) (putStrLn "composeFuncs test 2 passed.")
 
     putStrLn "All tests passed."
