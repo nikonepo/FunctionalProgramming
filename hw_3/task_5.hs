@@ -14,4 +14,5 @@ assert _     x = x
 
 main :: IO ()
 main = do
+    -- В CI можно посмотреть вывод троек
     print (take 10 pythagoreanTriples)
