@@ -1,10 +1,14 @@
-import Debug.Trace (assert)
-
 composition :: (b -> c, a -> b) -> a -> c
 composition (g, f) = g . f
 
 composeFuncs :: [Double -> Double] -> Int -> Int
 composeFuncs fs n = round $ (foldr (.) id fs) (fromIntegral n)
+
+--
+assert :: Bool -> a -> a
+assert False x = error "assertion failed!"
+assert _     x = x
+--
 
 main :: IO ()
 main = do
