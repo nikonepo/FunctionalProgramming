@@ -14,9 +14,9 @@ assert _     x = x
 
 main :: IO ()
 main = do
-    assert (f 0 == 1) ()
-    assert (f 1 == 1) ()
-    assert (f 2 == 3) ()
-    assert (f 3 == 14) ()
+    let _ = assert (f 0 == 1) ()
+    let _ = assert (f 1 == 1) ()
+    let _ = assert (f 2 == 3) ()
+    let _ = assert (f 3 == 14) ()
 
     putStrLn "All tests passed."
