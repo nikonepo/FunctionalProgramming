@@ -13,13 +13,8 @@ main :: IO ()
 main = do
     let s       = "hello"
         gotS    = sort (segs s)
-        wantS   = sort
-        [ "h","e","l","l","o"
-        , "he","el","ll","lo"
-        , "hel","ell","llo"
-        , "hell","ello"
-        , "hello"
-        ]
+        wantS   = sort [ "h","e","l","l","o", "he","el","ll","lo", "hel","ell","llo", "hell", "ello", "hello"]
+
     assert (gotS == wantS)
         ("segs \"hello\" =\n  " ++ show gotS ++ "\n but expected\n  " ++ show wantS)
 
