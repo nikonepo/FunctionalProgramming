@@ -1,7 +1,7 @@
 nrem :: Int -> [a] -> [a]
 nrem n a
-    | n == 0 = a
-    | otherwise [ x | (i,x) <- zip a [1..], i `mod` n /= 0 ]
+  | n == 0 = a
+  | otherwise [ x | (i,x) <- zip a [1..], i `mod` n /= 0 ]
 
 --
 assert :: Bool -> a -> a
