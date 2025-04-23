@@ -7,7 +7,7 @@ assert _     x = x
 nrem :: Int -> [a] -> [a]
 nrem n a
   | n == 0 = a
-  | otherwise [ x | (i,x) <- zip [1..] a, i `mod` n /= 0 ]
+  | otherwise = [ x | (i,x) <- zip [1..] a, i `mod` n /= 0 ]
 
 main :: IO ()
 main = do
