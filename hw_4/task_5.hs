@@ -1,6 +1,6 @@
 f :: Eq a => [a] -> [a]
 f [] = []
-f (x:y) x : f (filter (/= x) y)
+f (x:y) = x : f (filter (/= x) y)
 
 --
 assert :: Bool -> a -> a
