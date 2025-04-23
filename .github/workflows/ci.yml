@@ -27,3 +27,5 @@ jobs:
       - run: runhaskell hw_4/task_8_a.hs
       - run: runhaskell hw_4/task_8_b.hs
       - run: runhaskell hw_4/task_10.hs
+      - run: runhaskell hw_4/task_11_a.hs
+      - run: runhaskell hw_4/task_11_b.hs
