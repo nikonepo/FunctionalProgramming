@@ -1,13 +1,13 @@
-nrem :: Int -> [a] -> [a]
-nrem n a
-  | n == 0 = a
-  | otherwise [ x | (i,x) <- zip a [1..], i `mod` n /= 0 ]
-
 --
 assert :: Bool -> a -> a
 assert False x = error "assertion failed!"
 assert _     x = x
 --
+
+nrem :: Int -> [a] -> [a]
+nrem n a
+  | n == 0 = a
+  | otherwise [ x | (i,x) <- zip a [1..], i `mod` n /= 0 ]
 
 main :: IO ()
 main = do
