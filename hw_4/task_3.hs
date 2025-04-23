@@ -1,7 +1,7 @@
 import Data.List (inits, tails, sort)
 
 segs :: [a] -> [[a]]
-segs = concatMap (tails . inits) . tails
+segs = concatMap (tail . inits) . tails
 
 --
 assert :: Bool -> a -> a
