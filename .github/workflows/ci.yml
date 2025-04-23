@@ -30,4 +30,4 @@ jobs:
       - run: runhaskell hw_4/task_11_a.hs
       - run: runhaskell hw_4/task_11_b.hs
       - run: runhaskell hw_4/task_12_a.hs
-      - run: runhaskell hw_4/task_1_b.hs
+      - run: runhaskell hw_4/task_12_b.hs
