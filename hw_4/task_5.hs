@@ -10,10 +10,10 @@ assert _     x = x
 
 main :: IO ()
 main = do
-    let _ = assert (remDups ([] :: [Int]) == []) ()
-    let _ = assert (remDups [1,2,3] == [1,2,3]) ()
-    let _ = assert (remDups [1,2,1,3,2,4,1] == [1,2,3,4]) ()
-    let _ = assert (remDups "abracadabra" == "abrcd") ()
-    let _ = assert (remDups [True, False, True, True, False] == [True,False]) ()
+    let _ = assert (f ([] :: [Int]) == []) ()
+    let _ = assert (f [1,2,3] == [1,2,3]) ()
+    let _ = assert (f [1,2,1,3,2,4,1] == [1,2,3,4]) ()
+    let _ = assert (f "abracadabra" == "abrcd") ()
+    let _ = assert (f [True, False, True, True, False] == [True,False]) ()
 
     putStrLn "All tests passed."
