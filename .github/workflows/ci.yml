@@ -8,30 +8,30 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: haskell-actions/setup@v2
+      - run: runhaskell hw_3/task_1.hs
+      - run: runhaskell hw_3/task_3.hs
+      - run: runhaskell hw_3/task_4.hs
+      - run: runhaskell hw_3/task_5.hs
+      - run: runhaskell hw_3/task_6.hs
+      - run: runhaskell hw_3/task_7.hs
+      - run: runhaskell hw_3/task_8.hs
+      - run: runhaskell hw_3/task_10.hs
+      - run: runhaskell hw_4/task_3.hs
+      - run: runhaskell hw_4/task_4.hs
+      - run: runhaskell hw_4/task_5.hs
+      - run: runhaskell hw_4/task_6.hs
+      - run: runhaskell hw_4/task_7_a.hs
+      - run: runhaskell hw_4/task_7_b.hs
+      - run: runhaskell hw_4/task_7_c.hs
+      - run: runhaskell hw_4/task_7_d.hs
+      - run: runhaskell hw_4/task_8_a.hs
+      - run: runhaskell hw_4/task_8_b.hs
+      - run: runhaskell hw_4/task_10.hs
+      - run: runhaskell hw_4/task_11_a.hs
+      - run: runhaskell hw_4/task_11_b.hs
+      - run: runhaskell hw_4/task_12_a.hs
+      - run: runhaskell hw_4/task_12_b.hs
       - run: runhaskell kr/kr_2.hs
       - run: runhaskell kr/kr_3.hs
       - run: runhaskell kr/kr_6.hs
       - run: runhaskell kr/kr_8.hs
-#      - run: runhaskell hw_3/task_1.hs
-#      - run: runhaskell hw_3/task_3.hs
-#      - run: runhaskell hw_3/task_4.hs
-#      - run: runhaskell hw_3/task_5.hs
-#      - run: runhaskell hw_3/task_6.hs
-#      - run: runhaskell hw_3/task_7.hs
-#      - run: runhaskell hw_3/task_8.hs
-#      - run: runhaskell hw_3/task_10.hs
-#      - run: runhaskell hw_4/task_3.hs
-#      - run: runhaskell hw_4/task_4.hs
-#      - run: runhaskell hw_4/task_5.hs
-#      - run: runhaskell hw_4/task_6.hs
-#      - run: runhaskell hw_4/task_7_a.hs
-#      - run: runhaskell hw_4/task_7_b.hs
-#      - run: runhaskell hw_4/task_7_c.hs
-#      - run: runhaskell hw_4/task_7_d.hs
-#      - run: runhaskell hw_4/task_8_a.hs
-#      - run: runhaskell hw_4/task_8_b.hs
-#      - run: runhaskell hw_4/task_10.hs
-#      - run: runhaskell hw_4/task_11_a.hs
-#      - run: runhaskell hw_4/task_11_b.hs
-#      - run: runhaskell hw_4/task_12_a.hs
-#      - run: runhaskell hw_4/task_12_b.hs
