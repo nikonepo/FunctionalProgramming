@@ -22,11 +22,12 @@ instance Num Complex where
     fromInteger n = Complex (fromInteger n) 0
     negate (Complex r i) = Complex (-r) (-i)
 
-let z1 = Complex 3 4       -- 3 + 4i
-let z2 = Complex 1 (-2)    -- 1 - 2i
+
 
 main :: IO ()
 main = do
+    let z1 = Complex 3 4       -- 3 + 4i
+    let z2 = Complex 1 (-2)    -- 1 - 2i
     print z1   -- Выводит: 3 + 4i
     print z2   -- Выводит: 1 - 2i
 
