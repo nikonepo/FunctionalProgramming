@@ -1,3 +1,7 @@
+-- 8) Реализуйте функцию filterM :: Monad m => (a -> m Bool) -> [a] -> m [a],
+--    эквивалентную библиотечной на всех допустимых входах, используя лишь функции mapM и liftM,
+--    а также любые функции, чьи типы не содержат ограничений вида Monad m, Applicative m или более сильных.
+
 import Control.Monad (liftM)
 
 filterM :: Monad m => (a -> m Bool) -> [a] -> m [a]
