@@ -13,5 +13,4 @@ trickyList = xs
 
 -- Tests
 main :: IO ()
-main = do
-    take 12 trickyList
+main = print (take 12 trickyList)
