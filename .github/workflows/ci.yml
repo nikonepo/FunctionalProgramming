@@ -9,6 +9,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: haskell-actions/setup@v2
       - run: runhaskell kr/kr_2.hs
+      - run: runhaskell kr/kr_3.hs
 #      - run: runhaskell hw_3/task_1.hs
 #      - run: runhaskell hw_3/task_3.hs
 #      - run: runhaskell hw_3/task_4.hs

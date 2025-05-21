@@ -1,6 +1,5 @@
 -- 2) Определите тип Complex, представляющий комплексные числа, и поместите его в классы Show, Eq и
 --    Num математически разумным образом.
--- Решение:
 
 data Complex = Complex { real :: Double, imag :: Double }
 
@@ -22,18 +21,21 @@ instance Num Complex where
     fromInteger n = Complex (fromInteger n) 0
     negate (Complex r i) = Complex (-r) (-i)
 
-
-
+-- Tests
 main :: IO ()
 main = do
-    let z1 = Complex 3 4       -- 3 + 4i
-    let z2 = Complex 1 (-2)    -- 1 - 2i
-    print z1   -- Выводит: 3 + 4i
-    print z2   -- Выводит: 1 - 2i
+    -- 3 + 4i
+    let z1 = Complex 3 4
 
-    print (z1 == z2)   -- Выводит: False
+    -- 1 - 2i
+    let z2 = Complex 1 (-2)
+    print z1
+    print z2
+
+    print (z1 == z2)
 
     let sumZ = z1 + z2
-    print sumZ  -- Выводит: 4 + 2i
+    print sumZ
+
     let productZ = z1 * z2
-    print productZ  -- Выводит: 11 + 2i
+    print productZ
