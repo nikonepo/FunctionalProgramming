@@ -1,20 +1,15 @@
-import Data.Set (Set, empty, insert, member)
-import Data.PQueue.Prio.Min (MinPQueue, empty, insert, findMin, deleteMin)
+merge :: Ord a => [a] -> [a] -> [a]
+merge xs@(x:xt) ys@(y:yt) = case compare x y of
+    LT -> x : merge xt  ys
+    GT -> y : merge xs  yt
+    EQ -> x : merge xt  yt
 
 trickyList :: [Integer]
-trickyList = generateTrickyList
-
-generateTrickyList :: [Integer]
-generateTrickyList = go empty (insert 1 empty)
+trickyList = xs
   where
-    go :: Set Integer -> MinPQueue Integer -> [Integer]
-    go seen queue
-      | null queue = []
-      | otherwise = let
-          (x, q') = findMin queue
-          q'' = insert (5 * x) (insert (8 * x) q')
-          newSeen = insert x seen
-        in x : go newSeen q''
+    xs = 1
+      : merge (map (5*) xs)
+              (map (8*) xs)
 
 -- Tests
 main :: IO ()
